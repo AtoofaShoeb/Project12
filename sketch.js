@@ -32,9 +32,9 @@ function draw() {
   edges= createEdgeSprites();
   rabbit.collide(edges);
 
-  if(keyDown("space")&&rabbit.y>=100){
-  rabbit.velocityY=-13
-  }
+  rabbit.x= World.mouseX
+  rabbit.y= World.mouseY
+  
   rabbit.velocityY=rabbit.velocityY+0.8
   spawnapples()
   spawnleaves()
